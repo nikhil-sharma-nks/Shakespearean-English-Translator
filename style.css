@@ -76,16 +76,6 @@ textarea {
   border: 2px solid var(--primary-color);
 }
 
-.minion-img {
-  height: 200px;
-  width: 200px;
-  display: block;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 60px;
-}
-
 .heading {
   padding: 1rem;
   border-bottom: 1px solid black;
@@ -122,4 +112,83 @@ textarea {
 .social .fab:hover {
   background-color: var(--primary-color);
   cursor: pointer;
+}
+
+@media (max-width: 540px) {
+  .about {
+    margin: 10px auto;
+    width: 90%;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  textarea {
+    margin: 10px auto;
+    height: 20vh;
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  #output {
+    height: 20vh;
+    width: 80%;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .btn {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 50px;
+  }
+
+  #btn-translate {
+    background: var(--primary-color);
+    border: 1px solid black;
+  }
+  #btn-translate:hover {
+    background: var(--secondary-color);
+    font-weight: bold;
+  }
+
+  #btn-text-generator {
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    /* color: var(--primary-color); */
+  }
+  #btn-text-generator:hover {
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+  }
+
+  .heading {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    background-repeat: no-repeat;
+  }
+
+  .main-footer {
+    height: 100%;
+    position: unset;
+  }
+
+  .footer-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-text {
+    font-size: 25px;
+    margin-right: 40px;
+  }
+
+  .social .fab {
+    border-radius: 50%;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 0.5rem;
+  }
 }
